@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>মেসাব ক্লথ</title>
+  <style>
+    :root {
+      --primary-color: #e91e63;
+      --secondary-color: #f8bbd0;
+      --bg-color: #fffafc;
+      --text-color: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #d81b60, #ec407a);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      letter-spacing: 1px;
+    }
+
+    header span {
+      color: #ffe600;
+    }
+
+    .tagline {
+      font-size: 16px;
+      color: #fff9;
+      margin-top: 5px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 40px 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #c2185b;
+    }
+
+    footer {
+      background: #fce4ec;
+      padding: 20px;
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 26px;
+      }
+      .card img {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  🌸 <span>মেসাব ক্লথ</span>
+  <div class="tagline">স্টাইলিশ মেয়েদের জন্য সেরা কালেকশন</div>
+</header>
+
+<div class="container">
+  <!-- জামা ১ -->
+  <div class="card">
+    <img src="https://i.postimg.cc/MpwBmLTd/Chat-GPT-Image-May-25-2025-09-12-35-PM.png" alt="জামা ১">
+    <div class="card-content">
+      <h3>গর্জিয়াস ডিজাইন টিশার্ট</h3>
+      <p class="price">৳ ৬০০</p>
+      <a class="btn" href="https://wa.me/8801749726013?text=আমি এই কুর্তিটি কিনতে চাই: গর্জিয়াস কুর্তি - ৳১২০০">ক্রয় করুন</a>
+    </div>
+  </div>
+
+  <!-- জামা ২ -->
+  <div class="card">
+    <img src="https://i.postimg.cc/gcf8njP9/images-8.jpg" alt="জামা ২">
+    <div class="card-content">
+      <h3>সিল্ক প্রিন্ট সালোয়ার</h3>
+      <p class="price">৳ ১৮০০</p>
+      <a class="btn" href="https://wa.me/8801749726013?text=আমি এই সালোয়ারটি কিনতে চাই: সিল্ক প্রিন্ট - ৳১৫০০">ক্রয় করুন</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; ২০২৫ মেসাব ক্লথ | WhatsApp: 01749726013
+</footer>
+
+</body>
+</html>
