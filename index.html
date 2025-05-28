@@ -30,7 +30,7 @@
       color: white;
       padding: 30px 20px;
       text-align: center;
-      font-size: 32px;
+      font-size: 42px;
       font-weight: bold;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       letter-spacing: 1px;
@@ -38,12 +38,22 @@
 
     header span {
       color: #ffe600;
+      font-size: 48px;
     }
 
     .tagline {
-      font-size: 16px;
-      color: #fff9;
-      margin-top: 5px;
+      font-size: 18px;
+      color: #fff;
+      margin-top: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+      animation: slideLeft 15s linear infinite;
+    }
+
+    @keyframes slideLeft {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
     }
 
     .container {
@@ -68,8 +78,9 @@
 
     .card img {
       width: 100%;
-      height: 200px;
-      object-fit: cover;
+      object-fit: contain;
+      aspect-ratio: 3 / 4;
+      border-bottom: 1px solid #eee;
     }
 
     .card-content {
@@ -114,10 +125,10 @@
 
     @media (max-width: 450px) {
       header {
-        font-size: 26px;
+        font-size: 30px;
       }
-      .card img {
-        height: 200px;
+      header span {
+        font-size: 36px;
       }
     }
   </style>
@@ -136,7 +147,7 @@
     <div class="card-content">
       <h3>গর্জিয়াস ডিজাইন টিশার্ট</h3>
       <p class="price">৳ ৬০০</p>
-      <a class="btn" href="https://wa.me/8801749726013?text=আমি এই কুর্তিটি কিনতে চাই: গর্জিয়াস কুর্তি - ৳১২০০">ক্রয় করুন</a>
+      <a class="btn" href="https://wa.me/8801749726013?text=আমি এই কুর্তিটি কিনতে চাই: গর্জিয়াস কুর্তি - ৳৬০০">ক্রয় করুন</a>
     </div>
   </div>
 
@@ -146,7 +157,7 @@
     <div class="card-content">
       <h3>সিল্ক প্রিন্ট সালোয়ার</h3>
       <p class="price">৳ ১৮০০</p>
-      <a class="btn" href="https://wa.me/8801749726013?text=আমি এই সালোয়ারটি কিনতে চাই: সিল্ক প্রিন্ট - ৳১৫০০">ক্রয় করুন</a>
+      <a class="btn" href="https://wa.me/8801749726013?text=আমি এই সালোয়ারটি কিনতে চাই: সিল্ক প্রিন্ট - ৳১৮০০">ক্রয় করুন</a>
     </div>
   </div>
 </div>
